@@ -8,7 +8,7 @@
 
 .. toctree::
    :maxdepth: 1
-   :caption: Contents:
+   :caption: 目录:
 
    手动翻墙
    Ubuntu代理配置
