@@ -18,5 +18,6 @@
    手动翻墙
    Ubuntu代理配置
    SwitchyOmega代理设置
+   Ubuntu全局代理设置
 
    [todo]google cloud
