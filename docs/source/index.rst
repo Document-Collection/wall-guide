@@ -17,3 +17,6 @@
    如何判断端口被封
    手动翻墙
    Ubuntu代理配置
+   SwitchyOmega代理设置
+
+   [todo]google cloud
