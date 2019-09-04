@@ -19,5 +19,6 @@
    Ubuntu代理配置
    SwitchyOmega代理设置
    Ubuntu全局代理设置
+   ssr服务端设置
 
    [todo]google cloud
