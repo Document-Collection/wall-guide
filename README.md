@@ -9,6 +9,7 @@
 ## 内容列表
 
 - [背景](#背景)
+- [安装](#安装)
 - [用法](#用法)
 - [版本更新日志](#版本更新日志)
 - [主要维护人员](#主要维护人员)
@@ -19,9 +20,29 @@
 
 基于各种原因需要登录外网，之前使用过免费/付费VPN网站，经常断网不能使用，所以萌发了自己搭建境外服务器的念头
 
+# 安装
+
+需要预先安装以下工具：
+
+```
+$ pip install -U Sphinx
+$ sudo apt-get install make
+```
+
 ## 用法
 
-参考[穿墙指南](https://wall-guide.readthedocs.io/zh/latest/?badge=latest)教程
+有两种使用方式
+
+1. 在线浏览文档：[穿墙指南](https://wall-guide.readthedocs.io/zh/latest/?badge=latest)
+
+2. 本地生成文档，实现如下：
+
+    ```
+    $ git clone https://github.com/zjZSTU/wall-guide.git
+    $ cd wall-guide/docs
+    $ make html
+    ```
+    编译完成后进入`docs/build/html`目录，打开`index.html`文件
 
 ## 版本更新日志
 
