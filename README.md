@@ -54,11 +54,11 @@ $ sudo apt-get install make
 
 ## 参与贡献方式
 
-欢迎任何人的参与！打开[issue](https://github.com/zjZSTU/PyNet/issues)或提交合并请求。
+欢迎任何人的参与！打开[issue](https://github.com/zjZSTU/wall-guide/issues)或提交合并请求。
 
 注意:
 
-* `git`提交请遵守[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
+* `GIT`提交请遵守[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
 * 如果进行版本化，请遵守[Semantic Versioning 2.0.0](https://semver.org)规范
 * 如果修改README，请遵守[standard-readme](https://github.com/RichardLitt/standard-readme)规范
 
