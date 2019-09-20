@@ -58,9 +58,9 @@ $ sudo apt-get install make
 
 注意:
 
-* `GIT`提交请遵守[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)
-* 如果进行版本化，请遵守[Semantic Versioning 2.0.0](https://semver.org)规范
-* 如果修改README，请遵守[standard-readme](https://github.com/RichardLitt/standard-readme)规范
+* `GIT`提交，请遵守[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/)规范
+* 语义版本化，请遵守[Semantic Versioning 2.0.0](https://semver.org)规范
+* `README`编写，请遵守[standard-readme](https://github.com/RichardLitt/standard-readme)规范
 
 ## 许可证
 
