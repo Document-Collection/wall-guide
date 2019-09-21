@@ -20,5 +20,6 @@
    SwitchyOmega代理设置
    Ubuntu全局代理设置
    ssr配置
+   [brook]服务端+客户端设置
 
    [todo]google cloud
