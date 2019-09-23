@@ -21,5 +21,6 @@
    Ubuntu全局代理设置
    ssr配置
    [brook]服务端+客户端设置
+   v2ray使用
 
    [todo]google cloud
