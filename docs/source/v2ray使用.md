@@ -25,7 +25,36 @@
 `v2ray`提供了一个安装脚本
 
 ```
-$ bash <(curl -L -s https://install.direct/go.sh)
+$ sudo su
+
+# bash <(curl -L -s https://install.direct/go.sh)
+Installing V2Ray v4.20.0 on x86_64
+Downloading V2Ray: https://github.com/v2ray/v2ray-core/releases/download/v4.20.0/v2ray-linux-64.zip
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   608    0   608    0     0    527      0 --:--:--  0:00:01 --:--:--   528
+100 11.3M  100 11.3M    0     0  1442k      0  0:00:08  0:00:08 --:--:-- 2501k
+Extracting V2Ray package to /tmp/v2ray.
+Archive:  /tmp/v2ray/v2ray.zip
+  inflating: /tmp/v2ray/config.json  
+   creating: /tmp/v2ray/doc/
+  inflating: /tmp/v2ray/doc/readme.md  
+  inflating: /tmp/v2ray/geoip.dat    
+  inflating: /tmp/v2ray/geosite.dat  
+   creating: /tmp/v2ray/systemd/
+  inflating: /tmp/v2ray/systemd/v2ray.service  
+   creating: /tmp/v2ray/systemv/
+  inflating: /tmp/v2ray/systemv/v2ray  
+  inflating: /tmp/v2ray/v2ctl        
+ extracting: /tmp/v2ray/v2ctl.sig    
+  inflating: /tmp/v2ray/v2ray        
+ extracting: /tmp/v2ray/v2ray.sig    
+  inflating: /tmp/v2ray/vpoint_socks_vmess.json  
+  inflating: /tmp/v2ray/vpoint_vmess_freedom.json  
+PORT:19088
+UUID:98405c82-8056-4694-9676-d166da29f0c8
+Created symlink from /etc/systemd/system/multi-user.target.wants/v2ray.service to /etc/systemd/system/v2ray.service.
+V2Ray v4.20.0 is installed.
 ```
 
 *其仅实现了安装功能，其他操作（管理/卸载等）都很麻烦，不推荐使用*
@@ -202,8 +231,77 @@ TG 群组: https://t.me/blog233
 
 ## 配置文件
 
-...
-...
+参考：[Ubuntu中v2ray客户端配置实例](https://unixetc.com/post/v2ray-client-configuration-example-in-ubuntu/)
+
+`v2ray`安装完成后通过`/etc/v2ray/config.json`文件进行配置，首先查询服务器配置信息：
+
+```
+---------- V2Ray 配置信息 -------------
+
+ 地址 (Address) = 149.xx.8x.30
+
+ 端口 (Port) = xxxxx
+
+ 用户ID (User ID / UUID) = 9d514xxx0-069e-4979-9b6e-c66085a915e1
+
+ 额外ID (Alter Id) = 233
+
+ 传输协议 (Network) = tcp
+
+ 伪装类型 (header type) = none
+```
+
+在客户端安装`v2ray`，修改配置文件如下：
+
+```
+$ cat /etc/v2ray/config.json
+
+{
+  "inbounds": [{
+    "port": 1080,
+    "listen": "127.0.0.1",
+    "protocol": "socks",
+    "settings": {
+      "udp": true
+    }
+  }],
+  "outbounds": [{
+    "protocol": "vmess",
+    "settings": {
+      "vnext": [{
+        "address": "149.28.84.30",  // 服务器IP
+        "port": 39755,              // 服务器端口号
+        "users": [{ "id": "9d514420-069e-4979-9b6e-c66085a915e1" }]     // 用户ID
+      }]
+    }
+  },{
+    "protocol": "freedom",
+    "tag": "direct",
+    "settings": {}
+  }],
+  "routing": {
+    "domainStrategy": "IPOnDemand",
+    "rules": [{
+      "type": "field",
+      "ip": ["geoip:private"],
+      "outboundTag": "direct"
+    }]
+  }
+}
+```
+
+## 启动
+
+`v2ray`以服务形式管理应用
+
+```
+# 启动v2ray
+$ service v2ray start
+# 停止v2ray
+$ service v2ray stop
+# 查看v2ray状态
+$ service v2ray status
+```
 
 ## SS
 
