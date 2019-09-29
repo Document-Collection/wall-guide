@@ -15,8 +15,10 @@
 * 自建服务器
     * `SSR` - [ssr配置](https://wall-guide.readthedocs.io/zh/latest/ssr配置.html)
     * `BOOK` - [[brook]服务端+客户端设置](https://wall-guide.readthedocs.io/zh/latest/[brook]服务端+客户端设置.html)
-    * [v2ray使用](https://wall-guide.readthedocs.io/zh/latest/v2ray使用.html)
+    * `v2ray` - [v2ray使用](https://wall-guide.readthedocs.io/zh/latest/v2ray使用.html)
 * 购买梯子 - [[Google Helper]辅助搜索工具](https://wall-guide.readthedocs.io/zh/latest/[Google%20Helper]辅助搜索工具.html)
+* 移动客户端
+    * v2ray - [[Android]V2ray使用](https://wall-guide.readthedocs.io/zh/latest/[Android]V2ray使用.html)
 
 ## 内容列表
 

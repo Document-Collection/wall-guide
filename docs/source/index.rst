@@ -23,5 +23,6 @@
    [brook]服务端+客户端设置
    v2ray使用
    [Google Helper]辅助搜索工具
+   [Android]V2ray使用
 
    [todo]google cloud
