@@ -8,8 +8,8 @@
 
 [用Google Cloud Platform搭建Shadowsocks服务教程](https://www.kaggle.com/saksham219/softmax-regression-for-iris-classification)
 
-google云服务地址：[google cloud](https://cloud.google.com/)
+`google`云服务地址：[google cloud](https://cloud.google.com/)
 
 ## 信用卡
 
-需要申请visa信用卡或者master信用卡
+需要申请`visa`信用卡或者`master`信用卡

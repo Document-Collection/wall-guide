@@ -1,0 +1,49 @@
+# 站点名称
+site_name: 'Wall Guide'
+# 仓库链接
+repo_url: https://github.com/zjZSTU/wall-guide.git
+# 作者
+site_author: 'zhujian'
+# 版权信息
+copyright: '2019, zhujian'
+# 源文件目录
+docs_dir: 'docs'
+# 生成静态文件目录
+site_dir: 'site'
+# 额外信息
+extra:
+    # 版本号
+    version: 2.0.0
+# 主题
+theme: 
+    # name: 'readthedocs'
+    # name: 'mkdocs'
+    name: 'material'
+# markdown扩展
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+# 导航
+nav:
+    - Home: index.md
+    - 相关概念:
+        - '什么是VPS': './about/什么是VPS.md'
+        - '如何测速': './about/如何测速.md'
+        - '如何加速': './about/如何加速.md'
+        - '如何判断ip或端口被封': './about/如何判断ip或端口被封.md'
+    - V2ray配置:
+        - 'Vultr部署': '手动翻墙.md'
+        - 'V2ray配置': 'v2ray使用.md'
+        - '浏览器代理配置': 'SwitchyOmega代理设置.md'
+        - '全局代理配置': 'Ubuntu全局代理设置.md'
+        - '[Andorid]V2ray配置': '[Android]V2ray使用.md'
+    - 其他配置:
+        - 'Ubuntu代理配置': 'Ubuntu代理配置.md'
+        - 'SSR使用': 'ssr配置.md'
+        - '[brook]服务端+客户端设置': '[brook]服务端+客户端设置.md'
+        - '[Google Helper]辅助搜索工具': '[Google Helper]辅助搜索工具.md'
+        - '[todo]google cloud': '[todo]google cloud.md'
