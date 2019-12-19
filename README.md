@@ -6,20 +6,6 @@
 
 完整的境外服务器搭建，本地客户端/浏览器设置教程，实现科学上网
 
-* `VPS`介绍 - [什么是VPS](https://wall-guide.readthedocs.io/zh/latest/什么是VPS.html)
-* `ip/`端口查询 - [如何判断ip或端口被封](https://wall-guide.readthedocs.io/zh/latest/如何判断ip或端口被封.html)
-* `VULTR`使用 - [VPS服务器部署](https://wall-guide.readthedocs.io/zh/latest/手动翻墙.html)
-* 本地设置
-    * 全局代理设置 - [Ubuntu全局代理设置](https://wall-guide.readthedocs.io/zh/latest/Ubuntu全局代理设置.html)
-    * 浏览器插件设置 - [SwitchyOmega代理设置](https://wall-guide.readthedocs.io/zh/latest/SwitchyOmega代理设置.html)
-* 自建服务器
-    * `SSR` - [ssr配置](https://wall-guide.readthedocs.io/zh/latest/ssr配置.html)
-    * `BOOK` - [[brook]服务端+客户端设置](https://wall-guide.readthedocs.io/zh/latest/[brook]服务端+客户端设置.html)
-    * `v2ray` - [v2ray使用](https://wall-guide.readthedocs.io/zh/latest/v2ray使用.html)
-* 购买梯子 - [[Google Helper]辅助搜索工具](https://wall-guide.readthedocs.io/zh/latest/[Google%20Helper]辅助搜索工具.html)
-* 移动客户端
-    * v2ray - [[Android]V2ray使用](https://wall-guide.readthedocs.io/zh/latest/[Android]V2ray使用.html)
-
 ## 内容列表
 
 - [背景](#背景)
@@ -31,15 +17,14 @@
 
 ## 背景
 
-基于各种原因需要登录外网，之前使用过免费/付费VPN网站，经常断网不能使用，所以萌发了自己搭建境外服务器的念头
+基于各种原因需要登录外网，之前使用过免费/付费`VPN`网站，经常断网不能使用，所以萌发了自己搭建境外服务器的念头
 
 # 安装
 
 需要预先安装以下工具：
 
 ```
-$ pip install -U Sphinx
-$ sudo apt-get install make
+$ pip install mkdocs
 ```
 
 ## 用法
@@ -48,14 +33,14 @@ $ sudo apt-get install make
 
 1. 在线浏览文档：[穿墙指南](https://wall-guide.readthedocs.io/zh/latest/?badge=latest)
 
-2. 本地生成文档，实现如下：
+2. 本地浏览文档，实现如下：
 
     ```
     $ git clone https://github.com/zjZSTU/wall-guide.git
-    $ cd wall-guide/docs
-    $ make html
+    $ cd Containerization-Automation
+    $ mkdocs serve
     ```
-    编译完成后进入`docs/build/html`目录，打开`index.html`文件
+   启动本地服务器后即可登录浏览器`localhost:8000`
 
 ## 主要维护人员
 
