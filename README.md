@@ -37,7 +37,7 @@ $ pip install mkdocs
 
     ```
     $ git clone https://github.com/zjZSTU/wall-guide.git
-    $ cd Containerization-Automation
+    $ cd wall-guide
     $ mkdocs serve
     ```
    启动本地服务器后即可登录浏览器`localhost:8000`
