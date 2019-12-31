@@ -5,9 +5,7 @@
 
 ## 生成`pac`文件
 
-参考[Ubuntu代理配置](https://wall-guide.readthedocs.io/zh/latest/Ubuntu代理配置.html)安装`genpac`
-
-参考[ubuntu使用shadowsocks设置全局代理](https://wall-guide.readthedocs.io/zh/latest/Ubuntu代理配置.html)生成配置文件`autoproxy.pac`
+参考[Ubuntu代理配置](./Ubuntu代理配置.md)安装`genpac`，参考[ubuntu使用shadowsocks设置全局代理](./Ubuntu代理配置.md)生成配置文件`autoproxy.pac`
 
 ```
 $ genpac --proxy="SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" -o autoproxy.pac --gfwlist-url="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt"
@@ -29,7 +27,7 @@ file:///home/zj/software/vpn/autoproxy.pac
 
 代理操作使用`SOCKS5`协议，大多命令行操作使用`HTTP/HTTPS`协议，所以需要使用代理工具进行转换
 
-参考[Ubuntu代理配置](https://wall-guide.readthedocs.io/zh/latest/Ubuntu代理配置.html)安装`ProxyChains`
+参考[Ubuntu代理配置](./Ubuntu代理配置.md)安装`ProxyChains`
 
 测试命令
 

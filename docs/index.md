@@ -34,5 +34,5 @@
 
 1. 使用`Vultr`服务器
 2. 浏览器插件使用`SwitchyOmega`
-3. 客户端（`Ubuntu/Android`）/服务器使用`V2ray`
+3. 客户端（`Ubuntu/Android`）/服务器使用`Trojan`
 4. 使用`ProxyChains`命令行工具加速
