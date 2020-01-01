@@ -1,7 +1,7 @@
 
 # Ubuntu全局代理设置
 
-配置[SwitchyOmega代理设置](https://wall-guide.readthedocs.io/zh/latest/SwitchyOmega%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE.html)仅仅能够实现浏览器代理，还需要设置全局代理才能在命令行访问国外资源
+配置[SwitchyOmega代理设置](./SwitchyOmega代理设置.md)仅仅能够实现浏览器代理，还需要设置全局代理才能在命令行访问国外资源
 
 ## 生成`pac`文件
 

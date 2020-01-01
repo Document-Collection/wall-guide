@@ -12,7 +12,7 @@
 
 `csdn`下载地址：[switchyomega](https://download.csdn.net/download/u012005313/11130734)
 
-安装步骤参考[SwitchyOmega 安装](https://wall-guide.readthedocs.io/zh/latest/Ubuntu%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE.html#switchyomega)
+安装步骤参考[SwitchyOmega 安装](./Ubuntu代理配置.md)
 
 ## 配置
 
