@@ -33,6 +33,8 @@
 
 不过在国外的域名网站申请比较麻烦，我在阿里云上实现了域名申请、`TLS`证书申请和`DNS`解析（将域名和服务器`IP`绑定）
 
+**Note：对于阿里云`SSL`证书，使用`其他`类型即可；对于腾讯云`SSL`证书，使用`Nginx`类型即可**
+
 ## 服务端配置
 
 当前系统为`Ubuntu 18.04`，下载安装包 - [trojan-1.14.0-linux-amd64.tar.xz](https://github.com/trojan-gfw/trojan/releases)。解压后文件列表如下：
